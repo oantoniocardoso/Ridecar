@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Ridecar</string>
+    <string name="ridecar">RIDECAR</string>
+    <string name="todo">TODO</string>
 </resources>
