@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#010035"
+    android:background="@color/colorPrimary"
     tools:context=".SplashActivity">
 
     <ImageView
@@ -29,7 +29,7 @@
         android:layout_marginStart="137dp"
         android:layout_marginBottom="270dp"
         android:text="@string/ridecar"
-        android:textColor="#ff6e4e"
+        android:textColor="@color/colorSecondary"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
