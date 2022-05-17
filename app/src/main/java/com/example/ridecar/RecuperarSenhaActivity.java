@@ -2,8 +2,9 @@ package com.example.ridecar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toolbar;
+import android.view.View;
 
 public class RecuperarSenhaActivity extends AppCompatActivity {
 
@@ -13,8 +14,7 @@ public class RecuperarSenhaActivity extends AppCompatActivity {
         getSupportActionBar().hide();
         setContentView(R.layout.activity_recuperar_senha);
 
-        
-        
     }
-    
+
+    public void botaoVoltarOnClick(View v) { startActivity(new Intent(this, MainActivity.class));}
 }

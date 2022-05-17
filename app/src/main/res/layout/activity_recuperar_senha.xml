@@ -9,12 +9,24 @@
     <View
         android:id="@+id/view"
         android:layout_width="410dp"
-        android:layout_height="146dp"
+        android:layout_height="60dp"
         android:layout_marginEnd="1dp"
         android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:onClick="botaoVoltarOnClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_back" />
+
 
     <TextView
         android:id="@+id/textViewRecuperarSenha"
@@ -33,7 +45,7 @@
         android:layout_width="271dp"
         android:layout_height="52dp"
         android:text="Por favor, adicione o seu e-mail no campo\n abaixo e receba o link para realizar a\n alteção da senha."
-        android:textSize="38px"
+        android:textSize="14sp"
         android:textAlignment="center"
         app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,10 +75,10 @@
         android:ems="12"
         android:hint="Digite o seu e-mail"
         android:inputType="textEmailAddress"
-        android:minHeight="48dp"
+        android:minHeight="14sp"
         android:textAlignment="center"
         android:textColor="@color/textGrey"
-        android:textSize="38px"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"

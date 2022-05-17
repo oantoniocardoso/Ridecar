@@ -64,4 +64,6 @@ public class MainActivity extends AppCompatActivity {
             ds.setUnderlineText(false);
         }
     }
+
+    public void botaoCaroneiroOnClick(View v) { startActivity(new Intent(this, CaroneiroActivity.class));}
 }
