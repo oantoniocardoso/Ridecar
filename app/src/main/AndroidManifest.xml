@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ridecar">
         <activity
+            android:name=".NotificacaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RotasMotoristaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VeiculoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HabilitarMotoristaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MotoristaActivity"
+            android:exported="false" />
+        <activity
             android:name=".PerfilActivity"
             android:exported="false" />
         <activity

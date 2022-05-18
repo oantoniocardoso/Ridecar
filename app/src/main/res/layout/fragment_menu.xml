@@ -3,20 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MenuFragment"
     android:background="@color/colorPrimary">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:onClick="botaoVoltarOnClick"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/arrow_back" />
 
     <TextView
         android:id="@+id/textViewMenu"
@@ -45,5 +34,41 @@
         android:textSize="19sp"
         android:layout_marginLeft="140dp"
         android:layout_marginTop="110dp"/>
+
+    <TextView
+        android:id="@+id/textViewMotorista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondary"
+        android:textSize="19sp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="140dp"/>
+
+    <TextView
+        android:id="@+id/textViewHabilitarMotorista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondary"
+        android:textSize="19sp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="170dp"/>
+
+    <TextView
+        android:id="@+id/textViewVeiculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondary"
+        android:textSize="19sp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:id="@+id/textViewRotasMotorista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondary"
+        android:textSize="19sp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="230dp"/>
 
 </FrameLayout>

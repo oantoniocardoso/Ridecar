@@ -7,27 +7,38 @@
     tools:context=".RotasCaroneiroActivity">
 
     <View
-        android:id="@+id/viewRotasCaroneiro"
+        android:id="@+id/view"
         android:layout_width="410dp"
-        android:layout_height="146dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="1dp"
         android:background="@color/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="botaoVoltarOnClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_back"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Rotas Caroneiro"
         android:textColor="@color/colorSecondary"
-        android:textSize="40sp"
-        app:layout_constraintBottom_toBottomOf="@+id/viewRotasCaroneiro"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/viewRotasCaroneiro"
-        app:layout_constraintTop_toTopOf="@+id/viewRotasCaroneiro"
-        app:layout_constraintVertical_bias="0.505" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"/>
 
     <TextView
         android:id="@+id/textView4"
@@ -38,7 +49,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/viewRotasCaroneiro" />
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <TextView
         android:id="@+id/textView5"

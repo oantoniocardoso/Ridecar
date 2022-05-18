@@ -90,6 +90,58 @@ public class MenuFragment extends Fragment {
             }
         });
 
+        TextView textViewMotorista = (TextView) view.findViewById(R.id.textViewMotorista);
+        SpannableString motorista = new SpannableString("Motorista");
+        textViewMotorista.setText(motorista);
+        textViewMotorista.setMovementMethod(LinkMovementMethod.getInstance());
+
+        textViewMotorista.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MotoristaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView textViewHabilitarMotorista = (TextView) view.findViewById(R.id.textViewHabilitarMotorista);
+        SpannableString habilitarMotorista = new SpannableString("Habilitar Motorista");
+        textViewHabilitarMotorista.setText(habilitarMotorista);
+        textViewHabilitarMotorista.setMovementMethod(LinkMovementMethod.getInstance());
+
+        textViewHabilitarMotorista.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), HabilitarMotoristaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView textViewVeiculo = (TextView) view.findViewById(R.id.textViewVeiculo);
+        SpannableString veiculo = new SpannableString("Veículo");
+        textViewVeiculo.setText(veiculo);
+        textViewVeiculo.setMovementMethod(LinkMovementMethod.getInstance());
+
+        textViewVeiculo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), VeiculoActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView textViewRotasMotorista = (TextView) view.findViewById(R.id.textViewRotasMotorista);
+        SpannableString rotasMotorista = new SpannableString("Rotas Motorista");
+        textViewRotasMotorista.setText(rotasMotorista);
+        textViewRotasMotorista.setMovementMethod(LinkMovementMethod.getInstance());
+
+        textViewRotasMotorista.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), RotasMotoristaActivity.class);
+                startActivity(intent);
+            }
+        });
+
         return view;
     }
 }
