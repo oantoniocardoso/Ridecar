@@ -17,6 +17,7 @@ public class CaroneiroActivity extends AppCompatActivity implements View.OnClick
 
     ImageView callFragment;
     ImageView callFragmentVoltar;
+    ImageView callNotiicacao;
     Fragment fragment = new MenuFragment();
 
     @Override
@@ -32,6 +33,9 @@ public class CaroneiroActivity extends AppCompatActivity implements View.OnClick
         callFragmentVoltar.setOnClickListener(this);
         callFragmentVoltar.setVisibility(View.GONE);
 
+        callNotiicacao = findViewById(R.id.call_notificacao);
+        callNotiicacao.setOnClickListener(this);
+
     }
 
     @Override
@@ -44,6 +48,8 @@ public class CaroneiroActivity extends AppCompatActivity implements View.OnClick
             getSupportFragmentManager().beginTransaction().remove(fragment).commit();
             callFragmentVoltar.setVisibility(View.GONE);
             callFragment.setVisibility(View.VISIBLE);
+        }else if(view.getId() == R.id.call_notificacao){
+            startActivity(new Intent(this, NotificacaoActivity.class));
         }
     }
 
