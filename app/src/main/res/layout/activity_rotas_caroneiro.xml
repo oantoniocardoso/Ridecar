@@ -46,7 +46,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="Suas rotas salvas para caroneiro"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
@@ -57,150 +56,81 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="Rota 1"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="De:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
     <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="326dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
+        android:id="@+id/deRota"
+        android:layout_width="251dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="1dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/grey"
-        android:ems="10"
+        android:ems="12"
+        android:hint="Endereço de origem"
         android:inputType="textPersonName"
-        android:text="Rua Abigail Rezende, 1035"
+        android:minHeight="48dp"
+        android:textAlignment="center"
         android:textColor="@color/textGrey"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="@color/colorPrimary"
-        android:padding="10dp"
-        android:text="excluir rota"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        android:textColor="@color/colorSecondary"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:text="Para:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:text="De:"
+        app:layout_constraintEnd_toStartOf="@+id/deRota"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="182dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName2"
-        android:layout_width="326dp"
-        android:layout_height="23dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        android:background="@drawable/roundstyle"
-        android:backgroundTint="@color/grey"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Uniftec"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        android:textColor="@color/textGrey"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.227"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="251dp"
+        android:layout_height="42dp"
         android:layout_marginTop="30dp"
-        android:text="Rota 2"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:text="De:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="340dp"
-        android:layout_height="21dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/grey"
-        android:ems="10"
+        android:ems="12"
+        android:hint="Endereço de destino"
         android:inputType="textPersonName"
-        android:text="Rua Júlio de Castilhos, 535"
-        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:minHeight="48dp"
+        android:textAlignment="center"
         android:textColor="@color/textGrey"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deRota"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
         android:text="Para:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName2"
+        app:layout_constraintHorizontal_bias="0.604"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="254dp" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
         android:layout_marginTop="20dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Rua Pio X, 863"
-        android:background="@drawable/roundstyle"
-        android:backgroundTint="@color/grey"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Excluir Rota"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        android:textColor="@color/colorSecondary"
+        tools:ignore="TouchTargetSizeCheck"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
