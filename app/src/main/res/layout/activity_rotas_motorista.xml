@@ -43,8 +43,8 @@
     <fragment
         android:id="@+id/map"
         android:name="com.google.android.gms.maps.SupportMapFragment"
-        android:layout_width="420dp"
-        android:layout_height="120dp"
+        android:layout_width="415dp"
+        android:layout_height="92dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
@@ -53,20 +53,22 @@
         android:id="@+id/imageView3"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/map"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName3"
         app:srcCompat="@drawable/ic_baseline_location_on_24" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName4"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName4"
         app:srcCompat="@drawable/ic_baseline_location_on_24" />
 
     <TextView
@@ -83,18 +85,18 @@
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="251dp"
         android:layout_height="42dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/grey"
         android:ems="12"
+        android:hint="Insira o local de partida"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:hint="Insira o local de partida"
         android:textAlignment="center"
         android:textColor="@color/textGrey"
         android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11"
         tools:ignore="TouchTargetSizeCheck" />
 
@@ -102,18 +104,18 @@
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="251dp"
         android:layout_height="42dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/grey"
         android:ems="12"
+        android:hint="Para onde?"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:hint="Para onde?"
         android:textAlignment="center"
         android:textColor="@color/textGrey"
         android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
         tools:ignore="TouchTargetSizeCheck" />
 
@@ -121,57 +123,59 @@
         android:id="@+id/imageView5"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName5"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName5"
         app:srcCompat="@drawable/ic_baseline_access_time_24" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
         android:layout_width="251dp"
         android:layout_height="42dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/grey"
         android:ems="12"
+        android:hint="Insira o horário de saída"
+        android:inputType="textPersonName"
         android:minHeight="48dp"
         android:textAlignment="center"
         android:textColor="@color/textGrey"
         android:textSize="14sp"
-        android:inputType="textPersonName"
-        android:hint="Insira o horário de saída"
-        tools:ignore="TouchTargetSizeCheck"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+        tools:ignore="TouchTargetSizeCheck" />
 
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintEnd_toStartOf="@+id/textView12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
         app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="Defina o dia da semana para a carona"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.155"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toTopOf="@+id/imageView6" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
 
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
         android:text="Seg"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         app:layout_constraintStart_toEndOf="@+id/checkBox8"
@@ -182,7 +186,8 @@
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
         android:text="Ter"
         app:layout_constraintStart_toEndOf="@+id/checkBox2"
         app:layout_constraintTop_toBottomOf="@+id/textView12"
@@ -192,7 +197,8 @@
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
         android:text="Qua"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintStart_toEndOf="@+id/checkBox3"
@@ -200,22 +206,13 @@
         tools:ignore="TouchTargetSizeCheck" />
 
     <CheckBox
-        android:id="@+id/checkBox5"
+        android:id="@+id/checkBox8"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginTop="15dp"
-        android:text="Qui"
-        app:layout_constraintStart_toEndOf="@+id/checkBox4"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        tools:ignore="TouchTargetSizeCheck" />
-
-    <CheckBox
-        android:id="@+id/checkBox6"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginTop="15dp"
-        android:text="Sex"
-        app:layout_constraintStart_toEndOf="@+id/checkBox5"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Dom"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12"
         tools:ignore="TouchTargetSizeCheck" />
 
@@ -223,19 +220,32 @@
         android:id="@+id/checkBox7"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
         android:text="Sab"
         app:layout_constraintStart_toEndOf="@+id/checkBox6"
         app:layout_constraintTop_toBottomOf="@+id/textView12"
         tools:ignore="TouchTargetSizeCheck" />
 
     <CheckBox
-        android:id="@+id/checkBox8"
+        android:id="@+id/checkBox6"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginTop="15dp"
-        android:text="Dom"
-        app:layout_constraintEnd_toStartOf="@+id/checkBox2"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:text="Sex"
+        app:layout_constraintStart_toEndOf="@+id/checkBox5"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="48dp"
+        android:text="Qui"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12"
         tools:ignore="TouchTargetSizeCheck" />
 
@@ -243,14 +253,15 @@
         android:id="@+id/button3"
         android:layout_width="148dp"
         android:layout_height="40dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:backgroundTint="@color/colorPrimary"
         android:text="salvar rota"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="@color/colorSecondary"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox4"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox6"
         tools:ignore="TouchTargetSizeCheck" />
 
     <TextView

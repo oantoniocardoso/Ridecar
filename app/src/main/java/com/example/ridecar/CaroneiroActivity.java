@@ -31,6 +31,7 @@ public class CaroneiroActivity extends AppCompatActivity implements View.OnClick
     ImageView callFragmentVoltar;
     ImageView callNotiicacao;
     Fragment fragment = new MenuFragment();
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +52,8 @@ public class CaroneiroActivity extends AppCompatActivity implements View.OnClick
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        button = findViewById(R.id.button3);
+        button.setOnClickListener(this);
     }
 
     @Override
@@ -59,10 +62,12 @@ public class CaroneiroActivity extends AppCompatActivity implements View.OnClick
             getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment).commit();
             callFragment.setVisibility(View.GONE);
             callFragmentVoltar.setVisibility(View.VISIBLE);
+            button.setVisibility(View.GONE);
         }else if(view.getId() == R.id.call_fragmentVoltar){
             getSupportFragmentManager().beginTransaction().remove(fragment).commit();
             callFragmentVoltar.setVisibility(View.GONE);
             callFragment.setVisibility(View.VISIBLE);
+            button.setVisibility(View.VISIBLE);
         }else if(view.getId() == R.id.call_notificacao){
             startActivity(new Intent(this, NotificacaoActivity.class));
         }
@@ -70,12 +75,14 @@ public class CaroneiroActivity extends AppCompatActivity implements View.OnClick
 
     @Override
     public void onBackPressed() {
-        ImageView frag = (ImageView) findViewById(R.id.call_fragment);
+        ImageView call_fragment = (ImageView) findViewById(R.id.call_fragment);
+        ImageView call_fragmentVoltar = (ImageView) findViewById(R.id.call_fragmentVoltar);
 
-        if(frag != null){
+        if(call_fragment != null || call_fragmentVoltar != null){
             getSupportFragmentManager().beginTransaction().remove(fragment).commit();
             callFragmentVoltar.setVisibility(View.GONE);
             callFragment.setVisibility(View.VISIBLE);
+            button.setVisibility(View.VISIBLE);
         }else {
             super.onBackPressed();
         }
