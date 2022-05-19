@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.google.android.gms.maps.MapView;
+
 public class RotasMotoristaActivity extends AppCompatActivity {
 
     @Override
