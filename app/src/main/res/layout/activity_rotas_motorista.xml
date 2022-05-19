@@ -40,31 +40,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view" />
 
-    <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView"
-        android:layout_width="match_parent"
-        android:layout_height="163dp"
-        android:contentDescription="@string/ridecar"
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="420dp"
+        android:layout_height="120dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="55dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/map"
         app:srcCompat="@drawable/ic_baseline_location_on_24" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3"
         app:srcCompat="@drawable/ic_baseline_location_on_24" />
@@ -77,7 +77,7 @@
         android:text="SELECIONE A SUA ROTA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/mapView" />
+        app:layout_constraintTop_toBottomOf="@+id/map" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
@@ -90,7 +90,7 @@
         android:ems="12"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Insira o local de partida"
+        android:hint="Insira o local de partida"
         android:textAlignment="center"
         android:textColor="@color/textGrey"
         android:textSize="14sp"
@@ -109,7 +109,7 @@
         android:ems="12"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Para onde?"
+        android:hint="Para onde?"
         android:textAlignment="center"
         android:textColor="@color/textGrey"
         android:textSize="14sp"
@@ -119,10 +119,10 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@drawable/ic_baseline_access_time_24" />
@@ -141,15 +141,15 @@
         android:textColor="@color/textGrey"
         android:textSize="14sp"
         android:inputType="textPersonName"
-        android:text="Insira o horário de saída"
+        android:hint="Insira o horário de saída"
         tools:ignore="TouchTargetSizeCheck"
         app:layout_constraintStart_toEndOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
