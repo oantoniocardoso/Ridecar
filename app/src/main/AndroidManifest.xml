@@ -22,9 +22,6 @@
             android:name=".HabilitarMotoristaActivity"
             android:exported="false" />
         <activity
-            android:name=".MotoristaActivity"
-            android:exported="false" />
-        <activity
             android:name=".PerfilActivity"
             android:exported="false" />
         <activity

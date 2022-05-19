@@ -103,7 +103,7 @@
         android:background="@drawable/roundstyle"
         android:backgroundTint="@color/grey"
         android:ems="12"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:minHeight="48dp"
         android:hint="Digite o número da sua habilitação"
         android:textAlignment="center"

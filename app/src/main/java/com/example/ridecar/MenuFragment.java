@@ -90,19 +90,6 @@ public class MenuFragment extends Fragment {
             }
         });
 
-        TextView textViewMotorista = (TextView) view.findViewById(R.id.textViewMotorista);
-        SpannableString motorista = new SpannableString("Motorista");
-        textViewMotorista.setText(motorista);
-        textViewMotorista.setMovementMethod(LinkMovementMethod.getInstance());
-
-        textViewMotorista.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), MotoristaActivity.class);
-                startActivity(intent);
-            }
-        });
-
         TextView textViewHabilitarMotorista = (TextView) view.findViewById(R.id.textViewHabilitarMotorista);
         SpannableString habilitarMotorista = new SpannableString("Habilitar Motorista");
         textViewHabilitarMotorista.setText(habilitarMotorista);
@@ -138,6 +125,19 @@ public class MenuFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), RotasMotoristaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        TextView textViewLogout = (TextView) view.findViewById(R.id.textViewLogout);
+        SpannableString sair = new SpannableString("Sair");
+        textViewLogout.setText(sair);
+        textViewLogout.setMovementMethod(LinkMovementMethod.getInstance());
+
+        textViewLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MainActivity.class);
                 startActivity(intent);
             }
         });

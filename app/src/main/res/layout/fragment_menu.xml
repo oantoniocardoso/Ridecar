@@ -36,7 +36,7 @@
         android:layout_marginTop="110dp"/>
 
     <TextView
-        android:id="@+id/textViewMotorista"
+        android:id="@+id/textViewHabilitarMotorista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorSecondary"
@@ -45,7 +45,7 @@
         android:layout_marginTop="140dp"/>
 
     <TextView
-        android:id="@+id/textViewHabilitarMotorista"
+        android:id="@+id/textViewVeiculo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorSecondary"
@@ -54,7 +54,7 @@
         android:layout_marginTop="170dp"/>
 
     <TextView
-        android:id="@+id/textViewVeiculo"
+        android:id="@+id/textViewRotasMotorista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/colorSecondary"
@@ -63,12 +63,12 @@
         android:layout_marginTop="200dp"/>
 
     <TextView
-        android:id="@+id/textViewRotasMotorista"
+        android:id="@+id/textViewLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorSecondary"
-        android:textSize="19sp"
         android:layout_marginLeft="140dp"
-        android:layout_marginTop="230dp"/>
+        android:layout_marginTop="290dp"
+        android:textColor="@color/colorSecondary"
+        android:textSize="19sp" />
 
 </FrameLayout>
