@@ -41,6 +41,15 @@
         app:srcCompat="@drawable/arrow_back"
         tools:ignore="OnClick" />
 
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="407dp"
+        android:layout_height="235dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="406dp"
@@ -75,5 +84,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/notifications"
         tools:ignore="OnClick" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

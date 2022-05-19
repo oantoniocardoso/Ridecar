@@ -1,7 +1,9 @@
 package com.example.ridecar;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
@@ -12,8 +14,18 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import java.util.Scanner;
 
-public class CaroneiroActivity extends AppCompatActivity implements View.OnClickListener {
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
+//public class AppCompatActivityTest extends FragmentActivity implements OnMapReadyCallback {}
+
+public class CaroneiroActivity extends AppCompatActivity implements View.OnClickListener, OnMapReadyCallback {
 
     ImageView callFragment;
     ImageView callFragmentVoltar;
@@ -35,6 +47,9 @@ public class CaroneiroActivity extends AppCompatActivity implements View.OnClick
 
         callNotiicacao = findViewById(R.id.call_notificacao);
         callNotiicacao.setOnClickListener(this);
+
+        SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
 
     }
 
@@ -64,5 +79,12 @@ public class CaroneiroActivity extends AppCompatActivity implements View.OnClick
         }else {
             super.onBackPressed();
         }
+    }
+
+    @Override
+    public void onMapReady(@NonNull GoogleMap googleMap) {
+        LatLng Uniftec = new LatLng(-29.173624386319837, -51.218501087199);
+        googleMap.addMarker(new MarkerOptions().position(Uniftec).title("Uniftec"));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(Uniftec));
     }
 }
