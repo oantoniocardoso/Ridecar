@@ -1,5 +1,6 @@
 package com.example.ridecar;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,15 +11,31 @@ import android.text.TextPaint;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ClickableSpan;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
+
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getSupportActionBar().hide();
         setContentView(R.layout.activity_main);
+
+        mAuth = FirebaseAuth.getInstance();
+        /*if(mAuth.getCurrentUser() != null){
+            //finish();
+            //return;
+        }*/
 
         TextView textViewEsqueceuSenha = (TextView) findViewById(R.id.textViewEsqueceuSenha);
         TextView textViewCadastro = (TextView) findViewById(R.id.textViewCadastro);
@@ -34,6 +51,41 @@ public class MainActivity extends AppCompatActivity {
 
         textViewEsqueceuSenha.setMovementMethod(LinkMovementMethod.getInstance());
         textViewCadastro.setMovementMethod(LinkMovementMethod.getInstance());
+
+        Button btnLogin = findViewById(R.id.buttonEntrar);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                authenticateUser();
+            }
+        });
+    }
+
+    public void authenticateUser(){
+        EditText etEmail = findViewById(R.id.etEmail);
+        EditText etSenha = findViewById(R.id.etSenha);
+
+        String email = etEmail.getText().toString();
+        String senha = etSenha.getText().toString();
+
+        if(email.isEmpty() || senha.isEmpty()){
+            Toast.makeText(MainActivity.this,
+                    "Por favor preencha todos os campos.", Toast.LENGTH_LONG).show();
+            return;
+        }
+
+        mAuth.signInWithEmailAndPassword(email, senha)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if (task.isSuccessful()) {
+                            showCaroneiroActivity();
+                        } else {
+                            Toast.makeText(MainActivity.this,
+                                    "Falha na autenticação!", Toast.LENGTH_LONG).show();
+                        }
+                    }
+                });
 
     }
 
@@ -65,5 +117,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void botaoCaroneiroOnClick(View v) { startActivity(new Intent(this, CaroneiroActivity.class));}
+    private void showCaroneiroActivity(){
+        Intent intent = new Intent(this, CaroneiroActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }

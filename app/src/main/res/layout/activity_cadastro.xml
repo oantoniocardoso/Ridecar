@@ -140,13 +140,13 @@
         android:layout_marginTop="1dp"
         android:layout_marginEnd="161dp"
         android:text="SENHA"
-        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintBottom_toTopOf="@+id/senha"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/senha"
         android:layout_width="251dp"
         android:layout_height="42dp"
         android:layout_marginTop="30dp"
@@ -174,7 +174,7 @@
         app:layout_constraintBottom_toTopOf="@+id/celular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password" />
+        app:layout_constraintTop_toBottomOf="@+id/senha" />
 
     <EditText
         android:id="@+id/celular"
@@ -192,7 +192,7 @@
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/senha"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
@@ -204,7 +204,6 @@
         android:text="cadastrar"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
         android:textColor="@color/colorSecondary"
-        android:onClick="botaoCaroneiroOnClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/celular"
