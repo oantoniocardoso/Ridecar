@@ -32,10 +32,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mAuth = FirebaseAuth.getInstance();
-        /*if(mAuth.getCurrentUser() != null){
-            //finish();
-            //return;
-        }*/
 
         TextView textViewEsqueceuSenha = (TextView) findViewById(R.id.textViewEsqueceuSenha);
         TextView textViewCadastro = (TextView) findViewById(R.id.textViewCadastro);
@@ -82,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                             showCaroneiroActivity();
                         } else {
                             Toast.makeText(MainActivity.this,
-                                    "Falha na autenticação!", Toast.LENGTH_LONG).show();
+                                    "Usuário não autenticado!", Toast.LENGTH_LONG).show();
                         }
                     }
                 });

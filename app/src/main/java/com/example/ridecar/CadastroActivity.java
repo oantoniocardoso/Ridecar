@@ -28,10 +28,6 @@ public class CadastroActivity extends AppCompatActivity {
         setContentView(R.layout.activity_cadastro);
 
         mAuth = FirebaseAuth.getInstance();
-        /*if(mAuth.getCurrentUser() != null){
-            //finish();
-            //return;
-        }*/
 
         Button btnRegister = findViewById(R.id.buttonCadastrar);
         btnRegister.setOnClickListener(new View.OnClickListener() {
@@ -77,7 +73,7 @@ public class CadastroActivity extends AppCompatActivity {
                             });
                         }else if(senha.length() < 6){
                             Toast.makeText(CadastroActivity.this,
-                                    "A senha deve conter no minimo 6 números!", Toast.LENGTH_LONG).show();
+                                    "A senha deve conter no mínimo 6 números!", Toast.LENGTH_LONG).show();
                         } else {
                             Toast.makeText(CadastroActivity.this,
                                     "Falha na autenticação.", Toast.LENGTH_LONG).show();

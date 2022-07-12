@@ -84,7 +84,8 @@ public class CaroneiroActivity extends AppCompatActivity implements View.OnClick
         if (!locationManager.isProviderEnabled(LocationManager.GPS_PROVIDER)){
             Toast.makeText(this,"Atenção, ligue o GPS!", Toast.LENGTH_LONG).show();
         }else
-            Toast.makeText(CaroneiroActivity.this,"Aguarde, conectando ao GPS!", Toast.LENGTH_LONG).show();
+            Toast.makeText(CaroneiroActivity.this,
+                    "Aguarde, conectando ao GPS!", Toast.LENGTH_LONG).show();
 
         button = findViewById(R.id.button3);
         button.setOnClickListener(this);
