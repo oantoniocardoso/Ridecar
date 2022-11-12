@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/colorSecondary"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"/>
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="160dp"
+        android:text="E-MAIL"
+        app:layout_constraintBottom_toTopOf="@+id/etEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="251dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/grey"
+        android:ems="12"
+        android:hint="Digite o seu e-mail"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="@color/textGrey"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="161dp"
+        android:text="SENHA"
+        app:layout_constraintBottom_toTopOf="@+id/etSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail" />
+
+    <TextView
+        android:id="@+id/textViewEsqueceuSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/etSenha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+        />
+
+    <EditText
+        android:id="@+id/etSenha"
+        android:layout_width="251dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/grey"
+        android:ems="12"
+        android:hint="Digite uma senha forte"
+        android:inputType="numberPassword"
+        android:minHeight="48dp"
+        android:textAlignment="center"
+        android:textColor="@color/textGrey"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etEmail"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonEntrar"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="entrar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorSecondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSenha"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textViewCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginTop="5dp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEntrar" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

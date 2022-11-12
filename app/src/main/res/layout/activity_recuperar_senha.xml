@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecuperarSenhaActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="1dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="botaoVoltarOnClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow_back" />
+
+
+    <TextView
+        android:id="@+id/textViewRecuperarSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recuperar Senha"
+        android:textColor="@color/colorSecondary"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textViewTextoInfo"
+        android:layout_width="271dp"
+        android:layout_height="52dp"
+        android:text="Por favor, adicione o seu e-mail no campo\n abaixo e receba o link para realizar a\n alteção da senha."
+        android:textSize="14sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/textViewEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="160dp"
+        android:text="E-MAIL"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.957" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="251dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="160dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="@color/grey"
+        android:ems="12"
+        android:hint="Digite o seu e-mail"
+        android:inputType="textEmailAddress"
+        android:minHeight="14sp"
+        android:textAlignment="center"
+        android:textColor="@color/textGrey"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonEntrar"
+        android:layout_width="148dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="enviar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorSecondary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

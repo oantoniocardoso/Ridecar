@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1056879953846",
+    "project_id": "ridecar-e597e",
+    "storage_bucket": "ridecar-e597e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056879953846:android:084377e6ef11659116a317",
+        "android_client_info": {
+          "package_name": "com.example.ridecar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056879953846-r4e378e96vks2if2amjrovtpsaelmjb4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHs_c0yGnYTNi1V0yokAHu0KSVasCZ_94"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056879953846-r4e378e96vks2if2amjrovtpsaelmjb4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
