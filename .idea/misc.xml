@@ -19,20 +19,6 @@
         <entry key="..\:/Users/adria/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_rotas_caroneiro.xml" value="0.264" />
         <entry key="..\:/Users/adria/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_splash.xml" value="0.25" />
         <entry key="..\:/Users/adria/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_veiculo.xml" value="0.25" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/PI/Ridecar/app/src/main/res/layout/activity_cadastro.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/PI/Ridecar/app/src/main/res/layout/activity_caroneiro.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/PI/Ridecar/app/src/main/res/layout/activity_habilitar_motorista.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/PI/Ridecar/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/PI/Ridecar/app/src/main/res/layout/activity_motorista.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/PI/Ridecar/app/src/main/res/layout/activity_notificacao.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/PI/Ridecar/app/src/main/res/layout/activity_perfil.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/PI/Ridecar/app/src/main/res/layout/activity_recuperar_senha.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/PI/Ridecar/app/src/main/res/layout/activity_rotas_caroneiro.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/PI/Ridecar/app/src/main/res/layout/activity_rotas_motorista.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/PI/Ridecar/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/PI/Ridecar/app/src/main/res/layout/activity_veiculo.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/PI/Ridecar/app/src/main/res/layout/custom_dialog_loading.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/PI/Ridecar/app/src/main/res/layout/fragment_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.217" />
         <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/drawable/arrow_back.xml" value="0.3675" />
         <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/drawable/ic_baseline_person_outline_24.xml" value="0.1955" />
@@ -41,17 +27,17 @@
         <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/drawable/menu.xml" value="0.3675" />
         <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/drawable/roundstyle.xml" value="0.2175" />
         <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_cadastro.xml" value="0.33" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_caroneiro.xml" value="0.25" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_habilitar_motorista.xml" value="0.33" />
+        <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_caroneiro.xml" value="0.22" />
+        <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_habilitar_motorista.xml" value="0.22" />
         <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_main.xml" value="0.33" />
         <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_motorista.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_notificacao.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_perfil.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_notificacao.xml" value="0.22" />
+        <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_perfil.xml" value="0.22" />
         <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_recuperar_senha.xml" value="0.33" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_rotas_caroneiro.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_rotas_motorista.xml" value="0.25" />
+        <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_rotas_caroneiro.xml" value="0.22" />
+        <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_rotas_motorista.xml" value="0.22" />
         <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_splash.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_veiculo.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/activity_veiculo.xml" value="0.22" />
         <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/custom_dialog_loading.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/layout/fragment_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/anton/AndroidStudioProjects/Ridecar/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.217" />

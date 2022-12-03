@@ -20,12 +20,32 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/map_key"/>
-
+        <activity
+            android:name=".NotificacaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RotasMotoristaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VeiculoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HabilitarMotoristaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CaroneiroActivity"
+            android:exported="false" />
         <activity
             android:name=".CadastroActivity"
             android:exported="false" />
         <activity
             android:name=".RecuperarSenhaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RotasCaroneiroActivity"
             android:exported="false" />
         <activity
             android:name=".SplashActivity"

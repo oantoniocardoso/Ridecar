@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment"
+    android:background="@color/colorPrimary">
+
+
+    <TextView
+        android:id="@+id/textViewMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:textColor="@color/colorSecondary"
+        android:textSize="22sp"
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/textViewPerfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondary"
+        android:textSize="19sp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="80dp"/>
+
+    <TextView
+        android:id="@+id/textViewRotasCaroneiro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondary"
+        android:textSize="19sp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="110dp"/>
+
+    <TextView
+        android:id="@+id/textViewHabilitarMotorista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondary"
+        android:textSize="19sp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="140dp"/>
+
+    <TextView
+        android:id="@+id/textViewVeiculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondary"
+        android:textSize="19sp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="170dp"/>
+
+    <TextView
+        android:id="@+id/textViewRotasMotorista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorSecondary"
+        android:textSize="19sp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="200dp"/>
+
+    <TextView
+        android:id="@+id/textViewLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="290dp"
+        android:textColor="@color/colorSecondary"
+        android:textSize="19sp" />
+
+</FrameLayout>

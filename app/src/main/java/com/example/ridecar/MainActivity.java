@@ -114,7 +114,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void showCaroneiroActivity(){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, CaroneiroActivity.class);
         startActivity(intent);
         finish();
     }
